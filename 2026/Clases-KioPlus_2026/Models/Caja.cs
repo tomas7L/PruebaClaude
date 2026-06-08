@@ -14,9 +14,9 @@ namespace Clases_KioPlus.Models
         public double Monto { get; set; }
 
        
-        public void RegistrarIngreso(decimal monto)
+        public void RegistrarIngreso(double monto)
         {
-            MontoActual += monto;
+            Monto += monto;
         }
 
         //manera 1 

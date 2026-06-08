@@ -1,0 +1,25 @@
+# Carpetas de compilación de .NET
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+
+# Cache y configuración de Visual Studio
+.vs/
+*.user
+*.suo
+*.userprefs
+
+# Backups temporales del proyecto
+*.Backup.tmp
+*~
+
+# Visual Studio Code (opcional, conservar launch/settings si se desea)
+.vscode/
+
+# Resultados de pruebas / publicación
+[Tt]est[Rr]esults/
+[Pp]ublish/
+*.publishsettings
+
+# Archivos de usuario varios
+*.log
