@@ -9,11 +9,9 @@ namespace Clases_KioPlus.Models
     public class Caja
     {
         public int Id { get; set; }
-
-        // Monto total actual de dinero en la caja del sistema
+        //Monto actual de dinero en la caja del sistema
         public double Monto { get; set; }
 
-       
         public void RegistrarIngreso(double monto)
         {
             Monto += monto;
