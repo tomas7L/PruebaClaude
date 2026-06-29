@@ -8,8 +8,9 @@ using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. DbContext (usa la conexión ya configurada en ApplicationDbContext.OnConfiguring)
-builder.Services.AddDbContext<ApplicationDbContext>();
+// 1. DbContext
+builder.Services.AddDbContext<ApplicationDbContext>(opt =>
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // 2. Serializar los enums como texto (ej. "Administrador") en lugar de números
 builder.Services.ConfigureHttpJsonOptions(opt =>
